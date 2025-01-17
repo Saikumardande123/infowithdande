@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, maximum-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6.0, minimum-scale=.5, user-scalable=yes"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
+<title>UESI Telangana Vidhyardhi Velugu Magazine</title>
+<link rel="icon" href="img/logotop.png" type="image/png">
+<link rel="shortcut icon" href="img/logotop.png" type="img/x-icon">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+<script src="./node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/regcon.css" rel="stylesheet" type="text/css">
+<link href="css/font-sizes.css" rel="stylesheet" type="text/css">
+<link href="css/style_latest.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/Calendar.css">
+<link rel="stylesheet" href="css/CalendarTheme.css">
+<link  rel="stylesheet" href="css/Countries.css">
+
+        <!-- Example assets -->
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+    <script type="text/javascript" src="css/jquery.js"></script>
+    <script type="text/javascript" src="css/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="css/jcarousel.responsive.js"></script>
+
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/Calendar.js"></script>
+<script type="text/javascript" src="js/Countries.js"></script>
+<script type="text/javascript" src="js/Blob.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/gif.js"></script>
+<script type="text/javascript" src="js/gif.worker.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASXSeZa4xH3wg3lsbB58N3xEMazKaZjn0"></script>
+
+  <style type="text/css">
+        .profile-box{
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 175px;
+            width: all;
+        }
+        .fixed-top-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            z-index: 100;
+            background: #012333;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: bolder;
+            padding-top:8px;
+        }
+        .RedHeilight{
+        	border: solid 1px red;
+        }
+        .administrator-view{
+            margin-top: 80px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+		
+        .mleft10{
+            margin-left: 10px;
+        }
+        .exact-center{
+            margin-top: 12%;
+            width: 60%;
+        }
+		
+        .inputRoundForm{
+            margin-top: 20px;
+            border-radius: 10px;
+            height: 40px;
+
+            resize: vertical;
+            width: 80%;
+            text-align: left;
+            border-color: #888888;
+            border-width: 1px;
+            outline: none;
+           /* box-shadow: inset 1px 1px 5px #888888;*/
+            padding-left: 20px;
+
+       /*      width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;*/
+        }
+		 .inputRoundForm1{
+            margin-top: 20px;
+            border-radius: 10px;
+            height: 40px;
+
+            resize: vertical;
+            width: 60%;
+            text-align: left;
+            border-color: #888888;
+            border-width: 1px;
+            outline: none;
+           /* box-shadow: inset 1px 1px 5px #888888;*/
+            padding-left: 20px;
+
+       /*      width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;*/
+        }
+		.btn btn-primary btn-lg{
+		
+		resize: vertical;
+		width:20%;
+		  float: left;
+		
+		}
+        .buttonForm{
+    
+            margin-top: 20px;
+            border-radius: 10px;
+            height: 40px;
+            resize: vertical;
+            font-weight: bolder;
+            width: 100%;
+            text-align: left;
+            border-color: #888888;
+            float: left;
+            border-width: 1px;
+            outline: none;
+           /* box-shadow: inset 1px 1px 5px #888888;*/
+            padding-left: 20px;
+        }
+		
+		
+        .footer-box{
+        	position: fixed;
+        	bottom:0;
+        	left: 0;
+        	right: 0;
+        	height: 50px;
+        	z-index: 100;
+        	background: #7295A6;
+        	padding-top: 15px;
+        }
+        .full-profile-view input{
+        	background: #FFFFFF;
+        	cursor: default;
+        }
+            @media (max-width: 768px) {
+          .form-control,.btn,.btn-danger {
+            padding:2px 4px;
+            font-size:11px;
+            line-height: 1;
+          }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+          .form-control,.btn {
+           /* padding:4px 9px;*/
+            font-size:60%;
+            line-height: 1.2;
+          }
+        }
+
+        .autowide {
+          margin: 0 auto;
+            width: 98%;
+        }
+        .autowide img {
+          float: left;
+          margin: 0 .75rem 0 0;
+        }
+        .autowide .module {
+          /*background-color: lightgrey;*/
+          border-radius: .75rem;
+          margin-bottom: 1rem;
+        }
+        .autowide .module p {
+          padding: .25rem .75rem;
+        }
+		.checkbox input{
+			margin: 0px 0px 0px 0px;
+		}
+		
+		.checkbox {
+			text-align:center;
+		}
+		.checkbox label{
+			margin: 0px 15px 0px 1px;
+		}
+        /* 2 columns: 600px */
+        @media only screen and (min-width: 600px) {
+          .autowide .module {
+                float: left;
+                margin-right: 2.564102564102564%;
+                width: 48.717948717948715%;
+            }
+            .autowide .module:nth-child(2n+0) {
+                margin-right: 0;
+            }
+        }
+
+        /* 3 columns: 768px */
+        @media only screen and (min-width: 768px) {
+          .autowide .module {
+                width: 31.623931623931625%;
+            }
+            .autowide .module:nth-child(2n+0) {
+                margin-right: 2.564102564102564%;
+            }
+            .autowide .module:nth-child(3n+0) {
+                margin-right: 0;
+            }
+}
+
+        /* 4 columns: 992px and up */
+        @media only screen and (min-width: 992px) {
+          .autowide .module {
+                width: 23.076923076923077%;
+            }
+            .autowide .module:nth-child(3n+0) {
+                margin-right: 2.564102564102564%;
+            }
+            .autowide .module:nth-child(4n+0) {
+                margin-right: 0;
+           }
+ }
+
+.form-update{
+
+margin: 0 auto; 
+width:450px;
+
+}
+
+  </style>
+<script type="text/javascript" src="Editor.js"></script>
+ <script type="text/javascript" src="matrimony.js"></script>
+  <script type="text/javascript" src="js/main_latest.js"></script>
+  <script src="SocketClient.js?ver<%=DateTime.Now.Ticks.ToString()%>"></script><script type="text/javascript">
+	File.prototype.convertToBase64 = function(callback) {
+	    var reader = new FileReader();
+	    reader.onload = function(e) {
+	        callback(e.target.result)
+	    };
+	    reader.onerror = function(e) {
+	        callback(null);
+	    };
+	    reader.readAsDataURL(this);
+	}
+
+   </script>
+</head>
+<body>
+<div id="stateId">NEGF</div>
+<div class="fixed-top-header">
+    <div class="col-sm-6" style="font-size:2.3vw; height: 30px; margin-left: -50px;"><img src="Images/euimg.png" style="width:150px; height: 75px; margin-top: -25px; margin-right: -40px;">UESI Telangana Vidhyardhi Velugu  Magazine</div>
+
+    <div class="col-sm-6 buttons" style="display: none; ">
+
+    	<!--<button href="#" data-html="true" data-placement="bottom" data-content='<div style="color:black;"><div onclick="createMentor()" style="margin-bottom:10px;" class="btn btn-primary">Create Mentor</div><div onclick="deleteMentor()" style="margin-bottom:10px;" class="btn btn-danger">Delete Mentor</div><div onclick="editMentorsClicked()" class="btn btn-warning">Edit Mentors Data</div></div>' data-toggle="popover" class="btn btn-success mleft10 pull-right mentorCreate" style="display: none; " >More</button>
+
+    	<button href="#" data-html="true" data-placement="bottom" data-content='<div style="color:black;"><div onclick="editMentorsClicked()" class="btn btn-warning">Edit Mentors Data</div></div>' data-toggle="popover" class="btn btn-success mleft10 pull-right mentorEdit" style="display: none; " >More</button>-->
+
+        <button class="btn btn-danger pull-right mleft10" onclick="logoutClicked()">Logout</button>
+      <!--  <button class="btn btn-warning pull-right mleft10" onclick="createProfile()">Create Profile</button>-->
+
+
+    </div>
+</div>
+
+
+<div class="container exact-center text-center" style="height: 400px;">
+
+  <form class="form-horizontal">
+    <div class="form" style="margin-top: 30px;">
+        <div style="font-size: 25px; font-weight: bolder;">Editor Login</div>
+        <div>Sign in using your user id and password</div>
+        <div>
+            <input class="inputRoundForm input-sm" type="text" id="UserName" placeholder="Email Id or Mobile No">
+        </div>
+        <div>
+            <input class="inputRoundForm" type="password" id="Password" placeholder="Password">
+        </div>
+
+        <div>
+        	 <label class="checkbox-inline"><input type="checkbox" id="myCheck" value="">I agree to the <span style="color:green" data-target="#privacy-policy-modal" data-toggle="modal">Privacy Policy</span> of UESI</label>
+        </div>
+
+       <!--  <center><div class="row text-center">
+         <form>
+            <button class="col-12 col-sm-6 col-md-6 buttonForm" onclick="resetLoginForm()" type="button" style="float: left">Reset</button>
+            <button class="col-12 col-sm-6 col-md-6 buttonForm" type="button" onclick="loginClickedEM()" style="float: right;">Log In</button>
+        </div></center>
+ -->
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-11 col-md-11">
+                      <form>
+                        <button class="btn btn-primary btn-lg" onclick="EditorloginClickedEM('VV')" type="button" style="height: 40px; margin:5px; width: 100px;">Login </button>
+                       </form>
+                    </div>
+                  </div>
+
+
+    <!--    <div class="col-xs-6" style="padding-left: 205px;"></div>
+        <div class="col-xs-6" style="padding-right: 205px;"</div> -->
+    </div>
+  </form>
+</div>
+
+
+	<div style="height: 100px;"></div>
+</div>
+<div class="administrator-view" style="display:none; margin-left:150px">
+    <div style="margin-left:40px"><h3 id="welcomMessage" style="font-weight: bold;"> Welcome, Editor </h3> &ensp; &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp;  &ensp; <span id="womenId"></span>
+    </div>
+	
+	
+	<form class="form" name="contact-form" style="">
+		
+			<div class="input-field">
+				<input class="inputRoundForm1" type="text" id="User_id" placeholder="Email Id" >
+
+				<button class="btn btn-primary btn-lg" onclick="GetStatus()" type="button"  style="height: 40px; margin:5px; width: 100px;"  >Status </button>
+
+				<h3>Status: <span id="mystatus"></span></h3> 
+
+				<h4><span id="mystatustxt"></span></h4> 
+			</div>
+						<div class="checkbox" style="margin-right:400px" >
+							<label class="checkbox-enable"><input type="checkbox"  class= "check" id="myCheck1" value=""  onchange="checkboxChange(this)">Enable</label>
+							<label class="checkbox-disable"><input type="checkbox" class= "check" id="myCheck2" value=""  onchange="checkboxChange(this)">Disable</label>
+
+						<div>
+							<button class="btn btn-primary btn-lg" onclick="updateClickedEM('YES')" type="button"  style="height: 40px; margin:5px; width: 100px; " >Update </button>
+			
+						</div>		                 
+
+						</div >
+						
+          <br> </br> 
+			  
+
+
+	
+	</form>  
+</div>
+
+
+
+<div class="footer-box text-center" style="color: #000000">
+	 © 2023 UESI TS | All Rights Reserved.
+</div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="AlertDialogueModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="text-center">
+          <button type="button" class="close" style="text-align: center;" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="margin: 10px;">INFO</h4>
+        </div>
+        <hr style="color: gray; size: 1px; margin: 0px;">
+        <div class="text-center">
+          <p id="alertMessage" style="margin: 10px;">Some text in the modal.</p>
+        </div>
+        <div class="text-center">
+          <button type="button" style="margin: 10px;height: 30px; width: 100px; border-radius: 15px; padding: 0px; outline: none;" class="btn btn-success text-center" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- Rules Modal -->
+  <div class="modal fade" id="privacy-policy-modal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="text-center">
+          <button type="button" class="close" style="text-align: center;" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="margin: 10px;">UESI TS Privacy Policy</h4>
+        </div>
+        <hr style="color: gray; size: 1px; margin: 0px;">
+        <div class="text-center">
+         <ol>
+         	<li>  Rule No 1</li>
+         	<li>  Rule No 2</li>
+         	<li>  Rule No 3</li>
+         	<li>  Rule No 4</li>
+         	<li>  Rule No 5</li>
+         	<li>  Rule No 6</li>
+         </ol>
+        </div>
+        <div class="text-center">
+          <button type="button" style="margin: 10px;height: 30px; width: 100px; border-radius: 15px; padding: 0px; outline: none;" class="btn btn-success text-center" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+</body>
+<html>
